@@ -6,17 +6,23 @@ Router.route('/', {
     SEO.set({ title: 'Home - ' + Meteor.App.NAME });
   }
 });
-Router.route('/report-scores', {
-  name: 'scoreReport',
+Router.route('/about', {
   action: function () {
-  	this.render('scoreReport');
-  	SEO.set({ title: 'Score Reporting - ' + Meteor.App.NAME });
+    this.render('about');
+    SEO.set({ title: 'About - ' + Meteor.App.NAME});
   }
 });
 Router.route('/scoreboard', {
   name: 'scoreboard',
   action: function () {
-    // this.render('scoreboard');
+    this.render('scoreboard');
     SEO.set({ title: 'Scoreboard - ' + Meteor.App.NAME });
+  }
+});
+Router.route('/sponsors', {
+  name: 'sponsors',
+  action: function () {
+    this.render('sponsors');
+    SEO.set({ title: 'Sponsors - ' + Meteor.App.NAME });
   }
 });

@@ -3,10 +3,11 @@
         <header>
             {{> header}}
         </header>
-
+        <div id="content">
             {{> yield}}
             {{! Also a sidebar! }}
-        <footer>
+        </div>
+        <footer class="footer-container">
             {{> footer}}
         </footer>
     </div>
