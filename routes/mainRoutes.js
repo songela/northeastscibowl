@@ -19,10 +19,24 @@ Router.route('/scoreboard', {
     SEO.set({ title: 'Scoreboard - ' + Meteor.App.NAME });
   }
 });
+Router.route('/tours', {
+  name: 'tours',
+  action: function () {
+    this.render('tours');
+    SEO.set({ title: 'Tours - ' + Meteor.App.NAME });
+  }
+});
 Router.route('/sponsors', {
   name: 'sponsors',
   action: function () {
     this.render('sponsors');
     SEO.set({ title: 'Sponsors - ' + Meteor.App.NAME });
+  }
+});
+Router.route('/contact', {
+  name: 'contact',
+  action: function () {
+    this.render('contact');
+    SEO.set({ title: 'Contact - ' + Meteor.App.NAME });
   }
 });
