@@ -1,0 +1,52 @@
+<template name="header">
+    <div class="header-wrapper">
+        <h1 class="huge center aligned main ui header">
+            <div class="title"><a href="/">{{constant 'name'}}</a></div>
+            <div class="sub header">
+                <!-- <span class="page-link"><a href="#">About</a></span> -->
+                <span class="page-link"><a href="#">Scoreboard</a></span>
+                <span class="page-link"><a href="#">Tours</a></span>
+                <span class="page-link"><a href="#">Contact</a></span>
+            </div>
+        </h1>
+        <!-- <button class="basic ui resize icon button"><i class="{{iconClass}} icon"></i></button>
+ -->
+        <!-- {{#if showLogin}}
+        <div class="login-wrapper {{animateClass}} animated">
+            {{#if currentUser}}
+            <div class="actions-wrapper">
+                {{#if currentUser.username}}
+                <div class="hello">Hi {{currentUser.username}}!</div>
+                {{/if}}
+                <div class="ui fluid purple log-out button">
+                    <i class="sign out icon"></i>
+                    Log out
+                </div>
+            </div>
+            {{else}}
+            {{> atForm }}
+            {{/if}}
+        </div>
+        {{/if}} -->
+    </div>    
+</template>
+
+<!-- <template name="header" class="header-container">
+
+    <div class="title">
+        <a href="/">{{title}}</a>
+    </div>
+    {{#if currentUser}}
+        <div class="searchBar col-xs-4 col-sm-4 col-md-4 col-lg-4">{{> searchGroups}}</div>
+    {{/if}}
+    <div class="button-container">
+        {{#if currentUser}}
+            <span class="btn header-item">Total Points: {{currentUser.profile.points}}</span>
+            <span class="btn header-item"><a href="/user/profile">Profile</a></span>
+            <span class="btn header-item logout">Logout</span>
+        {{else}}
+            <span>{{> login}}</span>
+        {{/if}}
+    </div>
+</template>
+ -->

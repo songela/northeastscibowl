@@ -1,0 +1,176 @@
+<template name="home">
+    <!-- <div class="container" id="intro">
+        <div class="feature">
+            <h2><a href="https://www.gofundme.com/northeastscibowl" target="__blank">We need your help!</a></h2>
+
+            <p>Please help ensure that the Northeast Science Bowl is successful in our inaugural year by making a donation to our <a href="https://www.gofundme.com/northeastscibowl" target="__blank">gofundme campaign</a>. Your generous support is greatly appreciated!</p>
+        </div>
+
+        <div class="main-content">
+            <p>Launched in 1991, the National Science Bowl® (NSB) is a highly competitive science education and academic event among teams of high school and middle school students who compete in a fast-paced verbal forum to solve technical problems and answer questions in all branches of science and math. Each team is composed of four students, one alternate student, and a coach. Regional and national events encourage student involvement in math and science activities of importance to the Department of Energy and the Nation.</p>
+
+            <p>The National Science Bowl® for Middle School Students was started in 2002 and includes two types of competitions - an academic math and science competition and a model car race. The car race provides the students with a “hands-on” science and engineering experience where the teams design, build, and race their model cars.</p>
+
+            <p>Regional science bowl championship teams receive an all-expenses paid trip to compete at the national event. High school and middle school teams travel to Washington, D.C. in May. The national events are several days of science activities, sightseeing, and competitions. Teams enjoy the entire science bowl experience and take home many prizes. There are cutting-edge science seminars and hands-on science activities.</p>
+        </div>
+        
+    </div> -->
+
+    
+    <!-- 
+    <div class="ui four column main-content features grid">
+        {{#each feature}}
+            <div class="center aligned column">
+                <a href="{{path}}" class="ui unstyled no-hover-styles no-underline link icon header">
+                    <span class="headline">{{text}}</span>
+                    <i class="{{color}} {{icon}} boilerplate-feature icon"></i>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+
+    <div id="packages" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive red archive icon"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="large ui header">Atmosphere packages <div class="sub header">Don't reinvent the wheel</div></h3>
+                    <p>
+                        There are the a lot of
+                        <a href="https://github.com/matteodem/meteor-boilerplate/blob/master/.meteor/packages">helpful packages</a>
+                        to get you started asap. Some of them are.</p>
+                    <div class="ui list">
+                        {{#each package}}
+                            <a href="{{path}}" class="item no-underline link">
+                                <i class="archive icon"></i>
+                                {{name}}
+                            </a>
+                        {{/each}}
+                    </div>
+                    <div class="ui info message">
+                        <div class="header">
+                            Removed Packages
+                        </div>
+                        "insecure" and "autopublish" are removed by default!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="console-tool" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="column">
+                    <h3 class="large ui header">orion-cli <div class="sub header">Be even faster</div></h3>
+                    <p>
+                        To speed up a lot of simple repetitive tasks, there is the <a href="https://github.com/matteodem/orion-cli">orion-cli</a> that can be used with this boilerplate.<br />
+                        Simply use <code>orion generate {template}</code> to generate files in the project root.
+                    </p>
+                    <div class="ui list">
+                        {{#each consoleCommand}}
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">{{command}}</div>
+                                <div class="description">{{description}}</div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <p>
+                        There is also support for different profiles, as shown <a href="https://github.com/matteodem/meteor-boilerplate#available-profiles-cofeescript-and-es6">here</a>.
+                    </p>
+                </div>
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive code icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="html5" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive orange html5 icon"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="large ui header">HTML5 and CSS3 <div class="sub header">Semanticness FTW!</div></h3>
+                    <p>
+                        Semantic UI and Normalize.CSS are both added to increase the use of semantic tags and classes.
+                        It's better for both developers and designers if there's readable html code instead of non
+                        understandable string combinations.
+                    </p>
+                    <h4>CSS classes in Bootstrap 3 and Semantic UI - for Contrast</h4>
+                    <table class="ui basic table">
+                        <thead>
+                        <tr>
+                            <th>What</th>
+                            <th>Bootstrap 3</th>
+                            <th>Semantic UI</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each semanticElement}}
+                        <tr>
+                            <td>{{what}}</td>
+                            <td>{{withBootstrap}}</td>
+                            <td>{{withSemanticUI}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="structure" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="column">
+                    <h3 class="large ui header">Folder structure <div class="sub header">seperate your concerns</div></h3>
+                    <p>
+                        There's already a structure provided for your meteor app, with some content filled in to see
+                        where you can place what kind of code or where what code is generated. Here's the default structure
+                        as a list:
+                        <br />
+                        <ul>
+                            {{#each folder}}
+                            <li>
+                                {{root}}
+                                {{#if children}}
+                                <ul>
+                                    {{#each children}}
+                                    <li>{{this}}</li>
+                                    {{/each}}
+                                </ul>
+                                {{/if}}
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </p>
+
+                </div>
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive unordered list icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</template>
