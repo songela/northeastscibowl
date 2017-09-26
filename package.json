@@ -1,0 +1,25 @@
+{
+  "name": "northeastscibowl",
+  "version": "1.0.0",
+  "description": "Northeast Regional Middle School Science Bowl Website",
+  "main": "index.js",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songela/northeastscibowl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songela/northeastscibowl/issues"
+  },
+  "homepage": "https://github.com/songela/northeastscibowl#readme"
+}
