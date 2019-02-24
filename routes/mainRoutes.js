@@ -12,6 +12,13 @@ Router.route('/about', {
     SEO.set({ title: 'About - ' + Meteor.App.NAME});
   }
 });
+Router.route('/photos', {
+  name: 'photos',
+  action: function () {
+    this.render('photos');
+    SEO.set({ title: 'Photos - ' + Meteor.App.NAME });
+  }
+});
 Router.route('/scoreboard', {
   name: 'scoreboard',
   action: function () {
